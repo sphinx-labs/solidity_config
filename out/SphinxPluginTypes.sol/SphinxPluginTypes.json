@@ -1,0 +1,2476 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/SphinxPluginTypes.sol",
+    "id": 393,
+    "exportedSymbols": {
+      "BundleInfo": [
+        272
+      ],
+      "BundledSphinxAction": [
+        238
+      ],
+      "BundledSphinxTarget": [
+        245
+      ],
+      "CallNonces": [
+        337
+      ],
+      "ConfigCache": [
+        318
+      ],
+      "ConfigContractInfo": [
+        372
+      ],
+      "Configs": [
+        259
+      ],
+      "ContractConfigCache": [
+        332
+      ],
+      "ContractKindEnum": [
+        363
+      ],
+      "DeploymentRevert": [
+        343
+      ],
+      "FoundryConfig": [
+        287
+      ],
+      "FoundryContractConfig": [
+        297
+      ],
+      "HumanReadableAction": [
+        253
+      ],
+      "ImportCache": [
+        356
+      ],
+      "OptionalAddress": [
+        377
+      ],
+      "OptionalBool": [
+        382
+      ],
+      "OptionalBytes32": [
+        392
+      ],
+      "OptionalString": [
+        387
+      ],
+      "ParsedCallAction": [
+        350
+      ],
+      "ProposalRoute": [
+        367
+      ],
+      "RawSphinxAction": [
+        705
+      ],
+      "SphinxActionBundle": [
+        222
+      ],
+      "SphinxActionType": [
+        718
+      ],
+      "SphinxBundles": [
+        215
+      ],
+      "SphinxTarget": [
+        713
+      ],
+      "SphinxTargetBundle": [
+        229
+      ],
+      "Version": [
+        736
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2600:2",
+    "nodes": [
+      {
+        "id": 203,
+        "nodeType": "PragmaDirective",
+        "src": "32:31:2",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".4",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 208,
+        "nodeType": "ImportDirective",
+        "src": "65:144:2",
+        "nodes": [],
+        "absolutePath": "node_modules/@sphinx-labs/contracts/contracts/SphinxDataTypes.sol",
+        "file": "@sphinx-labs/contracts/contracts/SphinxDataTypes.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 393,
+        "sourceUnit": 800,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 204,
+              "name": "SphinxTarget",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 713,
+              "src": "78:12:2",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 205,
+              "name": "RawSphinxAction",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 705,
+              "src": "96:15:2",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 206,
+              "name": "SphinxActionType",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 718,
+              "src": "117:16:2",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 207,
+              "name": "Version",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 736,
+              "src": "139:7:2",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 215,
+        "nodeType": "StructDefinition",
+        "src": "211:98:2",
+        "nodes": [],
+        "canonicalName": "SphinxBundles",
+        "members": [
+          {
+            "constant": false,
+            "id": 211,
+            "mutability": "mutable",
+            "name": "actionBundle",
+            "nameLocation": "257:12:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 215,
+            "src": "238:31:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_SphinxActionBundle_$222_storage_ptr",
+              "typeString": "struct SphinxActionBundle"
+            },
+            "typeName": {
+              "id": 210,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 209,
+                "name": "SphinxActionBundle",
+                "nameLocations": [
+                  "238:18:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 222,
+                "src": "238:18:2"
+              },
+              "referencedDeclaration": 222,
+              "src": "238:18:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_SphinxActionBundle_$222_storage_ptr",
+                "typeString": "struct SphinxActionBundle"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 214,
+            "mutability": "mutable",
+            "name": "targetBundle",
+            "nameLocation": "294:12:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 215,
+            "src": "275:31:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_SphinxTargetBundle_$229_storage_ptr",
+              "typeString": "struct SphinxTargetBundle"
+            },
+            "typeName": {
+              "id": 213,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 212,
+                "name": "SphinxTargetBundle",
+                "nameLocations": [
+                  "275:18:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 229,
+                "src": "275:18:2"
+              },
+              "referencedDeclaration": 229,
+              "src": "275:18:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_SphinxTargetBundle_$229_storage_ptr",
+                "typeString": "struct SphinxTargetBundle"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "SphinxBundles",
+        "nameLocation": "218:13:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 222,
+        "nodeType": "StructDefinition",
+        "src": "311:82:2",
+        "nodes": [],
+        "canonicalName": "SphinxActionBundle",
+        "members": [
+          {
+            "constant": false,
+            "id": 217,
+            "mutability": "mutable",
+            "name": "root",
+            "nameLocation": "351:4:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 222,
+            "src": "343:12:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 216,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "343:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 221,
+            "mutability": "mutable",
+            "name": "actions",
+            "nameLocation": "383:7:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 222,
+            "src": "361:29:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_BundledSphinxAction_$238_storage_$dyn_storage_ptr",
+              "typeString": "struct BundledSphinxAction[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 219,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 218,
+                  "name": "BundledSphinxAction",
+                  "nameLocations": [
+                    "361:19:2"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 238,
+                  "src": "361:19:2"
+                },
+                "referencedDeclaration": 238,
+                "src": "361:19:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_BundledSphinxAction_$238_storage_ptr",
+                  "typeString": "struct BundledSphinxAction"
+                }
+              },
+              "id": 220,
+              "nodeType": "ArrayTypeName",
+              "src": "361:21:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_BundledSphinxAction_$238_storage_$dyn_storage_ptr",
+                "typeString": "struct BundledSphinxAction[]"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "SphinxActionBundle",
+        "nameLocation": "318:18:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 229,
+        "nodeType": "StructDefinition",
+        "src": "395:82:2",
+        "nodes": [],
+        "canonicalName": "SphinxTargetBundle",
+        "members": [
+          {
+            "constant": false,
+            "id": 224,
+            "mutability": "mutable",
+            "name": "root",
+            "nameLocation": "435:4:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 229,
+            "src": "427:12:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 223,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "427:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 228,
+            "mutability": "mutable",
+            "name": "targets",
+            "nameLocation": "467:7:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 229,
+            "src": "445:29:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_BundledSphinxTarget_$245_storage_$dyn_storage_ptr",
+              "typeString": "struct BundledSphinxTarget[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 226,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 225,
+                  "name": "BundledSphinxTarget",
+                  "nameLocations": [
+                    "445:19:2"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 245,
+                  "src": "445:19:2"
+                },
+                "referencedDeclaration": 245,
+                "src": "445:19:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_BundledSphinxTarget_$245_storage_ptr",
+                  "typeString": "struct BundledSphinxTarget"
+                }
+              },
+              "id": 227,
+              "nodeType": "ArrayTypeName",
+              "src": "445:21:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_BundledSphinxTarget_$245_storage_$dyn_storage_ptr",
+                "typeString": "struct BundledSphinxTarget[]"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "SphinxTargetBundle",
+        "nameLocation": "402:18:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 238,
+        "nodeType": "StructDefinition",
+        "src": "479:99:2",
+        "nodes": [],
+        "canonicalName": "BundledSphinxAction",
+        "members": [
+          {
+            "constant": false,
+            "id": 232,
+            "mutability": "mutable",
+            "name": "action",
+            "nameLocation": "528:6:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 238,
+            "src": "512:22:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_RawSphinxAction_$705_storage_ptr",
+              "typeString": "struct RawSphinxAction"
+            },
+            "typeName": {
+              "id": 231,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 230,
+                "name": "RawSphinxAction",
+                "nameLocations": [
+                  "512:15:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 705,
+                "src": "512:15:2"
+              },
+              "referencedDeclaration": 705,
+              "src": "512:15:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_RawSphinxAction_$705_storage_ptr",
+                "typeString": "struct RawSphinxAction"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 235,
+            "mutability": "mutable",
+            "name": "siblings",
+            "nameLocation": "550:8:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 238,
+            "src": "540:18:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+              "typeString": "bytes32[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 233,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "540:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "id": 234,
+              "nodeType": "ArrayTypeName",
+              "src": "540:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                "typeString": "bytes32[]"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 237,
+            "mutability": "mutable",
+            "name": "gas",
+            "nameLocation": "572:3:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 238,
+            "src": "564:11:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 236,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "564:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "BundledSphinxAction",
+        "nameLocation": "486:19:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 245,
+        "nodeType": "StructDefinition",
+        "src": "580:79:2",
+        "nodes": [],
+        "canonicalName": "BundledSphinxTarget",
+        "members": [
+          {
+            "constant": false,
+            "id": 241,
+            "mutability": "mutable",
+            "name": "target",
+            "nameLocation": "626:6:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 245,
+            "src": "613:19:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_SphinxTarget_$713_storage_ptr",
+              "typeString": "struct SphinxTarget"
+            },
+            "typeName": {
+              "id": 240,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 239,
+                "name": "SphinxTarget",
+                "nameLocations": [
+                  "613:12:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 713,
+                "src": "613:12:2"
+              },
+              "referencedDeclaration": 713,
+              "src": "613:12:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_SphinxTarget_$713_storage_ptr",
+                "typeString": "struct SphinxTarget"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 244,
+            "mutability": "mutable",
+            "name": "siblings",
+            "nameLocation": "648:8:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 245,
+            "src": "638:18:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+              "typeString": "bytes32[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 242,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "638:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "id": 243,
+              "nodeType": "ArrayTypeName",
+              "src": "638:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                "typeString": "bytes32[]"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "BundledSphinxTarget",
+        "nameLocation": "587:19:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 253,
+        "nodeType": "StructDefinition",
+        "src": "661:104:2",
+        "nodes": [],
+        "canonicalName": "HumanReadableAction",
+        "members": [
+          {
+            "constant": false,
+            "id": 247,
+            "mutability": "mutable",
+            "name": "reason",
+            "nameLocation": "701:6:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 253,
+            "src": "694:13:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 246,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "694:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 249,
+            "mutability": "mutable",
+            "name": "actionIndex",
+            "nameLocation": "718:11:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 253,
+            "src": "713:16:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 248,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "713:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 252,
+            "mutability": "mutable",
+            "name": "actionType",
+            "nameLocation": "752:10:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 253,
+            "src": "735:27:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_SphinxActionType_$718",
+              "typeString": "enum SphinxActionType"
+            },
+            "typeName": {
+              "id": 251,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 250,
+                "name": "SphinxActionType",
+                "nameLocations": [
+                  "735:16:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 718,
+                "src": "735:16:2"
+              },
+              "referencedDeclaration": 718,
+              "src": "735:16:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_SphinxActionType_$718",
+                "typeString": "enum SphinxActionType"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "HumanReadableAction",
+        "nameLocation": "668:19:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 259,
+        "nodeType": "StructDefinition",
+        "src": "767:79:2",
+        "nodes": [],
+        "canonicalName": "Configs",
+        "members": [
+          {
+            "constant": false,
+            "id": 256,
+            "mutability": "mutable",
+            "name": "minimalConfig",
+            "nameLocation": "802:13:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 259,
+            "src": "788:27:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_FoundryConfig_$287_storage_ptr",
+              "typeString": "struct FoundryConfig"
+            },
+            "typeName": {
+              "id": 255,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 254,
+                "name": "FoundryConfig",
+                "nameLocations": [
+                  "788:13:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 287,
+                "src": "788:13:2"
+              },
+              "referencedDeclaration": 287,
+              "src": "788:13:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_FoundryConfig_$287_storage_ptr",
+                "typeString": "struct FoundryConfig"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 258,
+            "mutability": "mutable",
+            "name": "parsedConfigStr",
+            "nameLocation": "828:15:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 259,
+            "src": "821:22:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 257,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "821:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "Configs",
+        "nameLocation": "774:7:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 272,
+        "nodeType": "StructDefinition",
+        "src": "848:165:2",
+        "nodes": [],
+        "canonicalName": "BundleInfo",
+        "members": [
+          {
+            "constant": false,
+            "id": 261,
+            "mutability": "mutable",
+            "name": "configUri",
+            "nameLocation": "879:9:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 272,
+            "src": "872:16:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 260,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "872:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 264,
+            "mutability": "mutable",
+            "name": "actionBundle",
+            "nameLocation": "913:12:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 272,
+            "src": "894:31:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_SphinxActionBundle_$222_storage_ptr",
+              "typeString": "struct SphinxActionBundle"
+            },
+            "typeName": {
+              "id": 263,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 262,
+                "name": "SphinxActionBundle",
+                "nameLocations": [
+                  "894:18:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 222,
+                "src": "894:18:2"
+              },
+              "referencedDeclaration": 222,
+              "src": "894:18:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_SphinxActionBundle_$222_storage_ptr",
+                "typeString": "struct SphinxActionBundle"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 267,
+            "mutability": "mutable",
+            "name": "targetBundle",
+            "nameLocation": "950:12:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 272,
+            "src": "931:31:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_SphinxTargetBundle_$229_storage_ptr",
+              "typeString": "struct SphinxTargetBundle"
+            },
+            "typeName": {
+              "id": 266,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 265,
+                "name": "SphinxTargetBundle",
+                "nameLocations": [
+                  "931:18:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 229,
+                "src": "931:18:2"
+              },
+              "referencedDeclaration": 229,
+              "src": "931:18:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_SphinxTargetBundle_$229_storage_ptr",
+                "typeString": "struct SphinxTargetBundle"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 271,
+            "mutability": "mutable",
+            "name": "humanReadableActions",
+            "nameLocation": "990:20:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 272,
+            "src": "968:42:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_HumanReadableAction_$253_storage_$dyn_storage_ptr",
+              "typeString": "struct HumanReadableAction[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 269,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 268,
+                  "name": "HumanReadableAction",
+                  "nameLocations": [
+                    "968:19:2"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 253,
+                  "src": "968:19:2"
+                },
+                "referencedDeclaration": 253,
+                "src": "968:19:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_HumanReadableAction_$253_storage_ptr",
+                  "typeString": "struct HumanReadableAction"
+                }
+              },
+              "id": 270,
+              "nodeType": "ArrayTypeName",
+              "src": "968:21:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_HumanReadableAction_$253_storage_$dyn_storage_ptr",
+                "typeString": "struct HumanReadableAction[]"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "BundleInfo",
+        "nameLocation": "855:10:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 287,
+        "nodeType": "StructDefinition",
+        "src": "1015:162:2",
+        "nodes": [],
+        "canonicalName": "FoundryConfig",
+        "members": [
+          {
+            "constant": false,
+            "id": 274,
+            "mutability": "mutable",
+            "name": "manager",
+            "nameLocation": "1050:7:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 287,
+            "src": "1042:15:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 273,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1042:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 276,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "1071:5:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 287,
+            "src": "1063:13:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 275,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1063:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 278,
+            "mutability": "mutable",
+            "name": "projectName",
+            "nameLocation": "1089:11:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 287,
+            "src": "1082:18:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 277,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1082:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 282,
+            "mutability": "mutable",
+            "name": "contracts",
+            "nameLocation": "1130:9:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 287,
+            "src": "1106:33:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_FoundryContractConfig_$297_storage_$dyn_storage_ptr",
+              "typeString": "struct FoundryContractConfig[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 280,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 279,
+                  "name": "FoundryContractConfig",
+                  "nameLocations": [
+                    "1106:21:2"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 297,
+                  "src": "1106:21:2"
+                },
+                "referencedDeclaration": 297,
+                "src": "1106:21:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_FoundryContractConfig_$297_storage_ptr",
+                  "typeString": "struct FoundryContractConfig"
+                }
+              },
+              "id": 281,
+              "nodeType": "ArrayTypeName",
+              "src": "1106:23:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_FoundryContractConfig_$297_storage_$dyn_storage_ptr",
+                "typeString": "struct FoundryContractConfig[]"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 286,
+            "mutability": "mutable",
+            "name": "postDeploy",
+            "nameLocation": "1164:10:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 287,
+            "src": "1145:29:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_ParsedCallAction_$350_storage_$dyn_storage_ptr",
+              "typeString": "struct ParsedCallAction[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 284,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 283,
+                  "name": "ParsedCallAction",
+                  "nameLocations": [
+                    "1145:16:2"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 350,
+                  "src": "1145:16:2"
+                },
+                "referencedDeclaration": 350,
+                "src": "1145:16:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_ParsedCallAction_$350_storage_ptr",
+                  "typeString": "struct ParsedCallAction"
+                }
+              },
+              "id": 285,
+              "nodeType": "ArrayTypeName",
+              "src": "1145:18:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_ParsedCallAction_$350_storage_$dyn_storage_ptr",
+                "typeString": "struct ParsedCallAction[]"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "FoundryConfig",
+        "nameLocation": "1022:13:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 297,
+        "nodeType": "StructDefinition",
+        "src": "1179:129:2",
+        "nodes": [],
+        "canonicalName": "FoundryContractConfig",
+        "members": [
+          {
+            "constant": false,
+            "id": 289,
+            "mutability": "mutable",
+            "name": "referenceName",
+            "nameLocation": "1221:13:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 297,
+            "src": "1214:20:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 288,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1214:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 291,
+            "mutability": "mutable",
+            "name": "addr",
+            "nameLocation": "1248:4:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 297,
+            "src": "1240:12:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 290,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1240:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 294,
+            "mutability": "mutable",
+            "name": "kind",
+            "nameLocation": "1275:4:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 297,
+            "src": "1258:21:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_ContractKindEnum_$363",
+              "typeString": "enum ContractKindEnum"
+            },
+            "typeName": {
+              "id": 293,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 292,
+                "name": "ContractKindEnum",
+                "nameLocations": [
+                  "1258:16:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 363,
+                "src": "1258:16:2"
+              },
+              "referencedDeclaration": 363,
+              "src": "1258:16:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_ContractKindEnum_$363",
+                "typeString": "enum ContractKindEnum"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 296,
+            "mutability": "mutable",
+            "name": "userSaltHash",
+            "nameLocation": "1293:12:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 297,
+            "src": "1285:20:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 295,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "1285:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "FoundryContractConfig",
+        "nameLocation": "1186:21:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 318,
+        "nodeType": "StructDefinition",
+        "src": "1310:245:2",
+        "nodes": [],
+        "canonicalName": "ConfigCache",
+        "members": [
+          {
+            "constant": false,
+            "id": 299,
+            "mutability": "mutable",
+            "name": "isManagerDeployed",
+            "nameLocation": "1340:17:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 318,
+            "src": "1335:22:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 298,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "1335:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 302,
+            "mutability": "mutable",
+            "name": "managerVersion",
+            "nameLocation": "1371:14:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 318,
+            "src": "1363:22:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Version_$736_storage_ptr",
+              "typeString": "struct Version"
+            },
+            "typeName": {
+              "id": 301,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 300,
+                "name": "Version",
+                "nameLocations": [
+                  "1363:7:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 736,
+                "src": "1363:7:2"
+              },
+              "referencedDeclaration": 736,
+              "src": "1363:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Version_$736_storage_ptr",
+                "typeString": "struct Version"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 304,
+            "mutability": "mutable",
+            "name": "blockGasLimit",
+            "nameLocation": "1399:13:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 318,
+            "src": "1391:21:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 303,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1391:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 306,
+            "mutability": "mutable",
+            "name": "chainId",
+            "nameLocation": "1426:7:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 318,
+            "src": "1418:15:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 305,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1418:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 310,
+            "mutability": "mutable",
+            "name": "contractConfigCache",
+            "nameLocation": "1461:19:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 318,
+            "src": "1439:41:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_ContractConfigCache_$332_storage_$dyn_storage_ptr",
+              "typeString": "struct ContractConfigCache[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 308,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 307,
+                  "name": "ContractConfigCache",
+                  "nameLocations": [
+                    "1439:19:2"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 332,
+                  "src": "1439:19:2"
+                },
+                "referencedDeclaration": 332,
+                "src": "1439:19:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_ContractConfigCache_$332_storage_ptr",
+                  "typeString": "struct ContractConfigCache"
+                }
+              },
+              "id": 309,
+              "nodeType": "ArrayTypeName",
+              "src": "1439:21:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_ContractConfigCache_$332_storage_$dyn_storage_ptr",
+                "typeString": "struct ContractConfigCache[]"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 314,
+            "mutability": "mutable",
+            "name": "callNonces",
+            "nameLocation": "1499:10:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 318,
+            "src": "1486:23:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_CallNonces_$337_storage_$dyn_storage_ptr",
+              "typeString": "struct CallNonces[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 312,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 311,
+                  "name": "CallNonces",
+                  "nameLocations": [
+                    "1486:10:2"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 337,
+                  "src": "1486:10:2"
+                },
+                "referencedDeclaration": 337,
+                "src": "1486:10:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_CallNonces_$337_storage_ptr",
+                  "typeString": "struct CallNonces"
+                }
+              },
+              "id": 313,
+              "nodeType": "ArrayTypeName",
+              "src": "1486:12:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_CallNonces_$337_storage_$dyn_storage_ptr",
+                "typeString": "struct CallNonces[]"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 317,
+            "mutability": "mutable",
+            "name": "undeployedExternalContracts",
+            "nameLocation": "1525:27:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 318,
+            "src": "1515:37:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+              "typeString": "address[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 315,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "1515:7:2",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "id": 316,
+              "nodeType": "ArrayTypeName",
+              "src": "1515:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "ConfigCache",
+        "nameLocation": "1317:11:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 332,
+        "nodeType": "StructDefinition",
+        "src": "1557:189:2",
+        "nodes": [],
+        "canonicalName": "ContractConfigCache",
+        "members": [
+          {
+            "constant": false,
+            "id": 320,
+            "mutability": "mutable",
+            "name": "referenceName",
+            "nameLocation": "1597:13:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 332,
+            "src": "1590:20:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 319,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1590:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 322,
+            "mutability": "mutable",
+            "name": "isTargetDeployed",
+            "nameLocation": "1621:16:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 332,
+            "src": "1616:21:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 321,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "1616:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 325,
+            "mutability": "mutable",
+            "name": "deploymentRevert",
+            "nameLocation": "1660:16:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 332,
+            "src": "1643:33:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_DeploymentRevert_$343_storage_ptr",
+              "typeString": "struct DeploymentRevert"
+            },
+            "typeName": {
+              "id": 324,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 323,
+                "name": "DeploymentRevert",
+                "nameLocations": [
+                  "1643:16:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 343,
+                "src": "1643:16:2"
+              },
+              "referencedDeclaration": 343,
+              "src": "1643:16:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_DeploymentRevert_$343_storage_ptr",
+                "typeString": "struct DeploymentRevert"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 328,
+            "mutability": "mutable",
+            "name": "importCache",
+            "nameLocation": "1694:11:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 332,
+            "src": "1682:23:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_ImportCache_$356_storage_ptr",
+              "typeString": "struct ImportCache"
+            },
+            "typeName": {
+              "id": 327,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 326,
+                "name": "ImportCache",
+                "nameLocations": [
+                  "1682:11:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 356,
+                "src": "1682:11:2"
+              },
+              "referencedDeclaration": 356,
+              "src": "1682:11:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_ImportCache_$356_storage_ptr",
+                "typeString": "struct ImportCache"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 331,
+            "mutability": "mutable",
+            "name": "previousConfigUri",
+            "nameLocation": "1726:17:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 332,
+            "src": "1711:32:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_OptionalString_$387_storage_ptr",
+              "typeString": "struct OptionalString"
+            },
+            "typeName": {
+              "id": 330,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 329,
+                "name": "OptionalString",
+                "nameLocations": [
+                  "1711:14:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 387,
+                "src": "1711:14:2"
+              },
+              "referencedDeclaration": 387,
+              "src": "1711:14:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_OptionalString_$387_storage_ptr",
+                "typeString": "struct OptionalString"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "ContractConfigCache",
+        "nameLocation": "1564:19:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 337,
+        "nodeType": "StructDefinition",
+        "src": "1748:62:2",
+        "nodes": [],
+        "canonicalName": "CallNonces",
+        "members": [
+          {
+            "constant": false,
+            "id": 334,
+            "mutability": "mutable",
+            "name": "callHash",
+            "nameLocation": "1780:8:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 337,
+            "src": "1772:16:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 333,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "1772:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 336,
+            "mutability": "mutable",
+            "name": "nonce",
+            "nameLocation": "1802:5:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 337,
+            "src": "1794:13:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 335,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1794:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "CallNonces",
+        "nameLocation": "1755:10:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 343,
+        "nodeType": "StructDefinition",
+        "src": "1812:89:2",
+        "nodes": [],
+        "canonicalName": "DeploymentRevert",
+        "members": [
+          {
+            "constant": false,
+            "id": 339,
+            "mutability": "mutable",
+            "name": "deploymentReverted",
+            "nameLocation": "1847:18:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 343,
+            "src": "1842:23:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 338,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "1842:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 342,
+            "mutability": "mutable",
+            "name": "revertString",
+            "nameLocation": "1886:12:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 343,
+            "src": "1871:27:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_OptionalString_$387_storage_ptr",
+              "typeString": "struct OptionalString"
+            },
+            "typeName": {
+              "id": 341,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 340,
+                "name": "OptionalString",
+                "nameLocations": [
+                  "1871:14:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 387,
+                "src": "1871:14:2"
+              },
+              "referencedDeclaration": 387,
+              "src": "1871:14:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_OptionalString_$387_storage_ptr",
+                "typeString": "struct OptionalString"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "DeploymentRevert",
+        "nameLocation": "1819:16:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 350,
+        "nodeType": "StructDefinition",
+        "src": "1903:78:2",
+        "nodes": [],
+        "canonicalName": "ParsedCallAction",
+        "members": [
+          {
+            "constant": false,
+            "id": 345,
+            "mutability": "mutable",
+            "name": "to",
+            "nameLocation": "1941:2:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 350,
+            "src": "1933:10:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 344,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1933:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 347,
+            "mutability": "mutable",
+            "name": "data",
+            "nameLocation": "1955:4:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 350,
+            "src": "1949:10:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes_storage_ptr",
+              "typeString": "bytes"
+            },
+            "typeName": {
+              "id": 346,
+              "name": "bytes",
+              "nodeType": "ElementaryTypeName",
+              "src": "1949:5:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_storage_ptr",
+                "typeString": "bytes"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 349,
+            "mutability": "mutable",
+            "name": "nonce",
+            "nameLocation": "1973:5:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 350,
+            "src": "1965:13:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 348,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1965:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "ParsedCallAction",
+        "nameLocation": "1910:16:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 356,
+        "nodeType": "StructDefinition",
+        "src": "1983:83:2",
+        "nodes": [],
+        "canonicalName": "ImportCache",
+        "members": [
+          {
+            "constant": false,
+            "id": 352,
+            "mutability": "mutable",
+            "name": "requiresImport",
+            "nameLocation": "2013:14:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 356,
+            "src": "2008:19:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 351,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "2008:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 355,
+            "mutability": "mutable",
+            "name": "currProxyAdmin",
+            "nameLocation": "2049:14:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 356,
+            "src": "2033:30:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_OptionalAddress_$377_storage_ptr",
+              "typeString": "struct OptionalAddress"
+            },
+            "typeName": {
+              "id": 354,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 353,
+                "name": "OptionalAddress",
+                "nameLocations": [
+                  "2033:15:2"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 377,
+                "src": "2033:15:2"
+              },
+              "referencedDeclaration": 377,
+              "src": "2033:15:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_OptionalAddress_$377_storage_ptr",
+                "typeString": "struct OptionalAddress"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "ImportCache",
+        "nameLocation": "1990:11:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 363,
+        "nodeType": "EnumDefinition",
+        "src": "2068:152:2",
+        "nodes": [],
+        "canonicalName": "ContractKindEnum",
+        "members": [
+          {
+            "id": 357,
+            "name": "INTERNAL_DEFAULT",
+            "nameLocation": "2096:16:2",
+            "nodeType": "EnumValue",
+            "src": "2096:16:2"
+          },
+          {
+            "id": 358,
+            "name": "OZ_TRANSPARENT",
+            "nameLocation": "2118:14:2",
+            "nodeType": "EnumValue",
+            "src": "2118:14:2"
+          },
+          {
+            "id": 359,
+            "name": "OZ_OWNABLE_UUPS",
+            "nameLocation": "2138:15:2",
+            "nodeType": "EnumValue",
+            "src": "2138:15:2"
+          },
+          {
+            "id": 360,
+            "name": "OZ_ACCESS_CONTROL_UUPS",
+            "nameLocation": "2159:22:2",
+            "nodeType": "EnumValue",
+            "src": "2159:22:2"
+          },
+          {
+            "id": 361,
+            "name": "EXTERNAL_DEFAULT",
+            "nameLocation": "2187:16:2",
+            "nodeType": "EnumValue",
+            "src": "2187:16:2"
+          },
+          {
+            "id": 362,
+            "name": "IMMUTABLE",
+            "nameLocation": "2209:9:2",
+            "nodeType": "EnumValue",
+            "src": "2209:9:2"
+          }
+        ],
+        "name": "ContractKindEnum",
+        "nameLocation": "2073:16:2"
+      },
+      {
+        "id": 367,
+        "nodeType": "EnumDefinition",
+        "src": "2222:75:2",
+        "nodes": [],
+        "canonicalName": "ProposalRoute",
+        "members": [
+          {
+            "id": 364,
+            "name": "RELAY",
+            "nameLocation": "2247:5:2",
+            "nodeType": "EnumValue",
+            "src": "2247:5:2"
+          },
+          {
+            "id": 365,
+            "name": "REMOTE_EXECUTION",
+            "nameLocation": "2258:16:2",
+            "nodeType": "EnumValue",
+            "src": "2258:16:2"
+          },
+          {
+            "id": 366,
+            "name": "LOCAL_EXECUTION",
+            "nameLocation": "2280:15:2",
+            "nodeType": "EnumValue",
+            "src": "2280:15:2"
+          }
+        ],
+        "name": "ProposalRoute",
+        "nameLocation": "2227:13:2"
+      },
+      {
+        "id": 372,
+        "nodeType": "StructDefinition",
+        "src": "2299:84:2",
+        "nodes": [],
+        "canonicalName": "ConfigContractInfo",
+        "members": [
+          {
+            "constant": false,
+            "id": 369,
+            "mutability": "mutable",
+            "name": "referenceName",
+            "nameLocation": "2338:13:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 372,
+            "src": "2331:20:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 368,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "2331:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 371,
+            "mutability": "mutable",
+            "name": "contractAddress",
+            "nameLocation": "2365:15:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 372,
+            "src": "2357:23:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 370,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "2357:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "ConfigContractInfo",
+        "nameLocation": "2306:18:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 377,
+        "nodeType": "StructDefinition",
+        "src": "2385:62:2",
+        "nodes": [],
+        "canonicalName": "OptionalAddress",
+        "members": [
+          {
+            "constant": false,
+            "id": 374,
+            "mutability": "mutable",
+            "name": "value",
+            "nameLocation": "2422:5:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 377,
+            "src": "2414:13:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 373,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "2414:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 376,
+            "mutability": "mutable",
+            "name": "exists",
+            "nameLocation": "2438:6:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 377,
+            "src": "2433:11:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 375,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "2433:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "OptionalAddress",
+        "nameLocation": "2392:15:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 382,
+        "nodeType": "StructDefinition",
+        "src": "2449:56:2",
+        "nodes": [],
+        "canonicalName": "OptionalBool",
+        "members": [
+          {
+            "constant": false,
+            "id": 379,
+            "mutability": "mutable",
+            "name": "value",
+            "nameLocation": "2480:5:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 382,
+            "src": "2475:10:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 378,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "2475:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 381,
+            "mutability": "mutable",
+            "name": "exists",
+            "nameLocation": "2496:6:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 382,
+            "src": "2491:11:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 380,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "2491:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "OptionalBool",
+        "nameLocation": "2456:12:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 387,
+        "nodeType": "StructDefinition",
+        "src": "2507:60:2",
+        "nodes": [],
+        "canonicalName": "OptionalString",
+        "members": [
+          {
+            "constant": false,
+            "id": 384,
+            "mutability": "mutable",
+            "name": "value",
+            "nameLocation": "2542:5:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 387,
+            "src": "2535:12:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 383,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "2535:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 386,
+            "mutability": "mutable",
+            "name": "exists",
+            "nameLocation": "2558:6:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 387,
+            "src": "2553:11:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 385,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "2553:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "OptionalString",
+        "nameLocation": "2514:14:2",
+        "scope": 393,
+        "visibility": "public"
+      },
+      {
+        "id": 392,
+        "nodeType": "StructDefinition",
+        "src": "2569:62:2",
+        "nodes": [],
+        "canonicalName": "OptionalBytes32",
+        "members": [
+          {
+            "constant": false,
+            "id": 389,
+            "mutability": "mutable",
+            "name": "value",
+            "nameLocation": "2606:5:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 392,
+            "src": "2598:13:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 388,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "2598:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 391,
+            "mutability": "mutable",
+            "name": "exists",
+            "nameLocation": "2622:6:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 392,
+            "src": "2617:11:2",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 390,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "2617:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "OptionalBytes32",
+        "nameLocation": "2576:15:2",
+        "scope": 393,
+        "visibility": "public"
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 2
+}

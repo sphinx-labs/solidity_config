@@ -1,0 +1,337 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "owner()": "8da5cb5b",
+    "renounceOwnership()": "715018a6",
+    "transferOwnership(address)": "f2fde38b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@sphinx-labs/contracts/contracts/interfaces/IOwnable.sol\":\"IOwnable\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@eth-optimism/=node_modules/@eth-optimism/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@sphinx-labs/=node_modules/@sphinx-labs/\",\":@sphinx/=node_modules/@sphinx-labs/plugins/contracts/foundry/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\",\":hardhat/=node_modules/hardhat/\",\":solmate/=node_modules/solmate/\"]},\"sources\":{\"node_modules/@sphinx-labs/contracts/contracts/interfaces/IOwnable.sol\":{\"keccak256\":\"0xbb7311da8d3e866339f05495de643e7ecad09b6bd70b368a96be01859727eb06\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aa381f4dbc56f8156b1c98fe72dde55c9d8f22632385312adaeb5170c9bed7f9\",\"dweb:/ipfs/Qmc5wEK6GyC6dajuE9XRV3pbqiHMr1RGGEXk98NDpdSngC\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "renounceOwnership"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnership"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@eth-optimism/=node_modules/@eth-optimism/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@sphinx-labs/=node_modules/@sphinx-labs/",
+        "@sphinx/=node_modules/@sphinx-labs/plugins/contracts/foundry/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/",
+        "hardhat/=node_modules/hardhat/",
+        "solmate/=node_modules/solmate/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@sphinx-labs/contracts/contracts/interfaces/IOwnable.sol": "IOwnable"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@sphinx-labs/contracts/contracts/interfaces/IOwnable.sol": {
+        "keccak256": "0xbb7311da8d3e866339f05495de643e7ecad09b6bd70b368a96be01859727eb06",
+        "urls": [
+          "bzz-raw://aa381f4dbc56f8156b1c98fe72dde55c9d8f22632385312adaeb5170c9bed7f9",
+          "dweb:/ipfs/Qmc5wEK6GyC6dajuE9XRV3pbqiHMr1RGGEXk98NDpdSngC"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
+  "ast": {
+    "absolutePath": "node_modules/@sphinx-labs/contracts/contracts/interfaces/IOwnable.sol",
+    "id": 151,
+    "exportedSymbols": {
+      "IOwnable": [
+        150
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:214:1",
+    "nodes": [
+      {
+        "id": 136,
+        "nodeType": "PragmaDirective",
+        "src": "32:31:1",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".4",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 150,
+        "nodeType": "ContractDefinition",
+        "src": "65:180:1",
+        "nodes": [
+          {
+            "id": 141,
+            "nodeType": "FunctionDefinition",
+            "src": "90:49:1",
+            "nodes": [],
+            "functionSelector": "8da5cb5b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nameLocation": "99:5:1",
+            "parameters": {
+              "id": 137,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "104:2:1"
+            },
+            "returnParameters": {
+              "id": 140,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 139,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 141,
+                  "src": "130:7:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 138,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "130:7:1",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "129:9:1"
+            },
+            "scope": 150,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 144,
+            "nodeType": "FunctionDefinition",
+            "src": "145:38:1",
+            "nodes": [],
+            "functionSelector": "715018a6",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "renounceOwnership",
+            "nameLocation": "154:17:1",
+            "parameters": {
+              "id": 142,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "171:2:1"
+            },
+            "returnParameters": {
+              "id": 143,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "182:0:1"
+            },
+            "scope": 150,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 149,
+            "nodeType": "FunctionDefinition",
+            "src": "189:54:1",
+            "nodes": [],
+            "functionSelector": "f2fde38b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferOwnership",
+            "nameLocation": "198:17:1",
+            "parameters": {
+              "id": 147,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 146,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "224:8:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 149,
+                  "src": "216:16:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 145,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "216:7:1",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "215:18:1"
+            },
+            "returnParameters": {
+              "id": 148,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "242:0:1"
+            },
+            "scope": 150,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IOwnable",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          150
+        ],
+        "name": "IOwnable",
+        "nameLocation": "75:8:1",
+        "scope": 151,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 1
+}

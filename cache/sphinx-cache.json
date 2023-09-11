@@ -1,0 +1,285 @@
+{
+  "contracts": {
+    "IOwnable": [
+      "node_modules/@sphinx-labs/contracts/contracts/interfaces/IOwnable.sol"
+    ],
+    "ISphinxManager": [
+      "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxManager.sol"
+    ],
+    "ISphinxRegistry": [
+      "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxRegistry.sol",
+      "/Users/ryan/Desktop/programming/splash/sphinx/packages/contracts/contracts/interfaces/ISphinxRegistry.sol"
+    ],
+    "Sphinx": [
+      "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
+      "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/Sphinx.sol"
+    ],
+    "ISphinxUtils": [
+      "node_modules/@sphinx-labs/plugins/contracts/foundry/interfaces/ISphinxUtils.sol",
+      "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/interfaces/ISphinxUtils.sol"
+    ],
+    "DSTest": [
+      "node_modules/ds-test/src/test.sol"
+    ],
+    "CommonBase": [
+      "node_modules/forge-std/src/Base.sol"
+    ],
+    "ScriptBase": [
+      "node_modules/forge-std/src/Base.sol"
+    ],
+    "TestBase": [
+      "node_modules/forge-std/src/Base.sol"
+    ],
+    "StdAssertions": [
+      "node_modules/forge-std/src/StdAssertions.sol"
+    ],
+    "StdChains": [
+      "node_modules/forge-std/src/StdChains.sol"
+    ],
+    "StdCheats": [
+      "node_modules/forge-std/src/StdCheats.sol"
+    ],
+    "StdCheatsSafe": [
+      "node_modules/forge-std/src/StdCheats.sol"
+    ],
+    "stdError": [
+      "node_modules/forge-std/src/StdError.sol"
+    ],
+    "StdInvariant": [
+      "node_modules/forge-std/src/StdInvariant.sol"
+    ],
+    "stdJson": [
+      "node_modules/forge-std/src/StdJson.sol"
+    ],
+    "stdMath": [
+      "node_modules/forge-std/src/StdMath.sol"
+    ],
+    "stdStorage": [
+      "node_modules/forge-std/src/StdStorage.sol"
+    ],
+    "stdStorageSafe": [
+      "node_modules/forge-std/src/StdStorage.sol"
+    ],
+    "StdStyle": [
+      "node_modules/forge-std/src/StdStyle.sol"
+    ],
+    "StdUtils": [
+      "node_modules/forge-std/src/StdUtils.sol"
+    ],
+    "Test": [
+      "node_modules/forge-std/src/Test.sol"
+    ],
+    "Vm": [
+      "node_modules/forge-std/src/Vm.sol"
+    ],
+    "VmSafe": [
+      "node_modules/forge-std/src/Vm.sol"
+    ],
+    "console": [
+      "node_modules/forge-std/src/console.sol"
+    ],
+    "console2": [
+      "node_modules/forge-std/src/console2.sol"
+    ],
+    "IMulticall3": [
+      "node_modules/forge-std/src/interfaces/IMulticall3.sol"
+    ],
+    "safeconsole": [
+      "node_modules/forge-std/src/safeconsole.sol"
+    ],
+    "HelloSphinx": [
+      "src/HelloSphinx.sol"
+    ],
+    "HelloSphinxTest": [
+      "test/HelloSphinx.t.sol"
+    ],
+    "Deploy": [
+      "node_modules/@sphinx-labs/plugins/contracts/foundry/Deploy.sol",
+      "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/Deploy.sol"
+    ],
+    "Script": [
+      "node_modules/forge-std/src/Script.sol"
+    ],
+    "DeployDemo": [
+      "script/Deploy.sol"
+    ]
+  },
+  "files": {
+    "e52857d35e7d72f9b9789e76fa2034d7.json": {
+      "name": "e52857d35e7d72f9b9789e76fa2034d7.json",
+      "time": 1694108025382,
+      "contracts": [
+        "node_modules/@sphinx-labs/contracts/contracts/interfaces/IOwnable.sol",
+        "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxManager.sol",
+        "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxRegistry.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/interfaces/ISphinxUtils.sol",
+        "node_modules/ds-test/src/test.sol",
+        "node_modules/forge-std/src/Base.sol",
+        "node_modules/forge-std/src/StdAssertions.sol",
+        "node_modules/forge-std/src/StdChains.sol",
+        "node_modules/forge-std/src/StdCheats.sol",
+        "node_modules/forge-std/src/StdError.sol",
+        "node_modules/forge-std/src/StdInvariant.sol",
+        "node_modules/forge-std/src/StdJson.sol",
+        "node_modules/forge-std/src/StdMath.sol",
+        "node_modules/forge-std/src/StdStorage.sol",
+        "node_modules/forge-std/src/StdStyle.sol",
+        "node_modules/forge-std/src/StdUtils.sol",
+        "node_modules/forge-std/src/Test.sol",
+        "node_modules/forge-std/src/Vm.sol",
+        "node_modules/forge-std/src/console.sol",
+        "node_modules/forge-std/src/console2.sol",
+        "node_modules/forge-std/src/interfaces/IMulticall3.sol",
+        "node_modules/forge-std/src/safeconsole.sol",
+        "src/HelloSphinx.sol",
+        "test/HelloSphinx.t.sol"
+      ]
+    },
+    "8531143cefd0d950ab8c00d63e564fbb.json": {
+      "name": "8531143cefd0d950ab8c00d63e564fbb.json",
+      "time": 1694132960132,
+      "contracts": [
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Deploy.sol",
+        "node_modules/forge-std/src/Script.sol"
+      ]
+    },
+    "1f914cf86cd7fc8052d6bbf8fe505627.json": {
+      "name": "1f914cf86cd7fc8052d6bbf8fe505627.json",
+      "time": 1694132906209,
+      "contracts": [
+        "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/interfaces/ISphinxUtils.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/ds-test/src/test.sol",
+        "node_modules/forge-std/src/StdAssertions.sol",
+        "node_modules/forge-std/src/StdError.sol",
+        "node_modules/forge-std/src/StdInvariant.sol",
+        "node_modules/forge-std/src/Test.sol",
+        "src/HelloSphinx.sol",
+        "test/HelloSphinx.t.sol"
+      ]
+    },
+    "81daaec92f7990cc059e60b14318fa61.json": {
+      "name": "81daaec92f7990cc059e60b14318fa61.json",
+      "time": 1694132957656,
+      "contracts": [
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/interfaces/ISphinxUtils.sol",
+        "node_modules/ds-test/src/test.sol",
+        "node_modules/forge-std/src/StdAssertions.sol",
+        "node_modules/forge-std/src/StdError.sol",
+        "node_modules/forge-std/src/StdInvariant.sol",
+        "node_modules/forge-std/src/Test.sol",
+        "src/HelloSphinx.sol",
+        "test/HelloSphinx.t.sol"
+      ]
+    },
+    "d582f40029a60660df29c014dddbed56.json": {
+      "name": "d582f40029a60660df29c014dddbed56.json",
+      "time": 1694132908744,
+      "contracts": [
+        "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/Deploy.sol",
+        "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/forge-std/src/Script.sol"
+      ]
+    },
+    "4c124d88e0523fbcc116ab63efd360ef.json": {
+      "name": "4c124d88e0523fbcc116ab63efd360ef.json",
+      "time": 1694133009677,
+      "contracts": [
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Deploy.sol",
+        "node_modules/forge-std/src/Script.sol"
+      ]
+    },
+    "0b40b478a395e3cc1c7b3ebf409764ba.json": {
+      "name": "0b40b478a395e3cc1c7b3ebf409764ba.json",
+      "time": 1694133007279,
+      "contracts": [
+        "/Users/ryan/Desktop/programming/splash/sphinx/packages/contracts/contracts/interfaces/ISphinxRegistry.sol",
+        "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxManager.sol",
+        "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxRegistry.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/interfaces/ISphinxUtils.sol",
+        "node_modules/ds-test/src/test.sol",
+        "node_modules/forge-std/src/StdAssertions.sol",
+        "node_modules/forge-std/src/StdError.sol",
+        "node_modules/forge-std/src/StdInvariant.sol",
+        "node_modules/forge-std/src/Test.sol",
+        "src/HelloSphinx.sol",
+        "test/HelloSphinx.t.sol"
+      ]
+    },
+    "2261815bf50a147b78938abff1079c02.json": {
+      "name": "2261815bf50a147b78938abff1079c02.json",
+      "time": 1694133510471,
+      "contracts": [
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Deploy.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/ds-test/src/test.sol",
+        "node_modules/forge-std/src/StdAssertions.sol",
+        "node_modules/forge-std/src/StdError.sol",
+        "node_modules/forge-std/src/StdInvariant.sol",
+        "node_modules/forge-std/src/Test.sol",
+        "script/Deploy.sol",
+        "src/HelloSphinx.sol",
+        "test/HelloSphinx.t.sol"
+      ]
+    },
+    "f237b0fae204ede852c5746be505c109.json": {
+      "name": "f237b0fae204ede852c5746be505c109.json",
+      "time": 1694133344034,
+      "contracts": [
+        "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/Deploy.sol",
+        "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/forge-std/src/Script.sol"
+      ]
+    },
+    "c8e56433f754d3a962af61ab6aab9f2a.json": {
+      "name": "c8e56433f754d3a962af61ab6aab9f2a.json",
+      "time": 1694133341283,
+      "contracts": [
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/ds-test/src/test.sol",
+        "node_modules/forge-std/src/StdAssertions.sol",
+        "node_modules/forge-std/src/StdError.sol",
+        "node_modules/forge-std/src/StdInvariant.sol",
+        "node_modules/forge-std/src/Test.sol",
+        "src/HelloSphinx.sol",
+        "test/HelloSphinx.t.sol"
+      ]
+    },
+    "cc3dabc4ffdc62949373a16cba67672c.json": {
+      "name": "cc3dabc4ffdc62949373a16cba67672c.json",
+      "time": 1694133052125,
+      "contracts": [
+        "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/interfaces/ISphinxUtils.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/ds-test/src/test.sol",
+        "node_modules/forge-std/src/StdAssertions.sol",
+        "node_modules/forge-std/src/StdError.sol",
+        "node_modules/forge-std/src/StdInvariant.sol",
+        "node_modules/forge-std/src/Test.sol",
+        "src/HelloSphinx.sol",
+        "test/HelloSphinx.t.sol"
+      ]
+    },
+    "f93589fa0fdc1af5a5d8b28cfcd3c896.json": {
+      "name": "f93589fa0fdc1af5a5d8b28cfcd3c896.json",
+      "time": 1694134309655,
+      "contracts": [
+        "script/Deploy.sol"
+      ]
+    },
+    "c084d69834ca0a8cf8fc4c83ae68433f.json": {
+      "name": "c084d69834ca0a8cf8fc4c83ae68433f.json",
+      "time": 1694204974545,
+      "contracts": [
+        "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/Sphinx.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Deploy.sol",
+        "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
+        "script/Deploy.sol",
+        "test/HelloSphinx.t.sol"
+      ]
+    }
+  }
+}

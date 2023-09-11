@@ -1,0 +1,2419 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "activeDeploymentId",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_actionRoot",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_targetRoot",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_numInitialActions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_numSetStorageActions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_numTargets",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_configUri",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "_remoteExecution",
+          "type": "bool"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_callHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "callNonces",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "cancelActiveSphinxDeployment",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_deploymentId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "deployments",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum DeploymentStatus",
+              "name": "status",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bool[]",
+              "name": "actions",
+              "type": "bool[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "targets",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "actionRoot",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "targetRoot",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "numImmutableContracts",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "actionsExecuted",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timeClaimed",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "selectedExecutor",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "remoteExecution",
+              "type": "bool"
+            },
+            {
+              "internalType": "string",
+              "name": "configUri",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "numInitialActions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "numSetStorageActions",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct DeploymentState",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum SphinxActionType",
+              "name": "actionType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct RawSphinxAction[]",
+          "name": "_actions",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "bytes32[][]",
+          "name": "_proofs",
+          "type": "bytes32[][]"
+        }
+      ],
+      "name": "executeInitialActions",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "_proxy",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_contractKindHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "exportProxy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address payable",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "implementation",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "contractKindHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct SphinxTarget[]",
+          "name": "_targets",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "bytes32[][]",
+          "name": "_proofs",
+          "type": "bytes32[][]"
+        }
+      ],
+      "name": "finalizeUpgrade",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "_projectName",
+          "type": "string"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address payable",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "implementation",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "contractKindHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct SphinxTarget[]",
+          "name": "_targets",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "bytes32[][]",
+          "name": "_proofs",
+          "type": "bytes32[][]"
+        }
+      ],
+      "name": "initiateUpgrade",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isExecuting",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "registry",
+      "outputs": [
+        {
+          "internalType": "contract ISphinxRegistry",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum SphinxActionType",
+              "name": "actionType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct RawSphinxAction[]",
+          "name": "_actions",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "bytes32[][]",
+          "name": "_proofs",
+          "type": "bytes32[][]"
+        }
+      ],
+      "name": "setStorage",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "activeDeploymentId()": "dfba66f0",
+    "approve(bytes32,bytes32,uint256,uint256,uint256,string,bool)": "28d6ec60",
+    "callNonces(bytes32)": "f8050b04",
+    "cancelActiveSphinxDeployment()": "0e128b5d",
+    "deployments(bytes32)": "37404017",
+    "executeInitialActions((uint8,uint256,bytes)[],bytes32[][])": "6dcfd466",
+    "exportProxy(address,bytes32,address)": "75cd65e1",
+    "finalizeUpgrade((address,address,bytes32)[],bytes32[][])": "3731e1ce",
+    "initialize(address,string,bytes)": "0eb624be",
+    "initiateUpgrade((address,address,bytes32)[],bytes32[][])": "f22bd7fd",
+    "isExecuting()": "e8ea2d08",
+    "registry()": "7b103999",
+    "setStorage((uint8,uint256,bytes)[],bytes32[][])": "047a1e5a"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"activeDeploymentId\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_actionRoot\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_targetRoot\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"_numInitialActions\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_numSetStorageActions\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_numTargets\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_configUri\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"_remoteExecution\",\"type\":\"bool\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_callHash\",\"type\":\"bytes32\"}],\"name\":\"callNonces\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"cancelActiveSphinxDeployment\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_deploymentId\",\"type\":\"bytes32\"}],\"name\":\"deployments\",\"outputs\":[{\"components\":[{\"internalType\":\"enum DeploymentStatus\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"bool[]\",\"name\":\"actions\",\"type\":\"bool[]\"},{\"internalType\":\"uint256\",\"name\":\"targets\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"actionRoot\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"targetRoot\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"numImmutableContracts\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"actionsExecuted\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"timeClaimed\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"selectedExecutor\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"remoteExecution\",\"type\":\"bool\"},{\"internalType\":\"string\",\"name\":\"configUri\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"numInitialActions\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"numSetStorageActions\",\"type\":\"uint256\"}],\"internalType\":\"struct DeploymentState\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enum SphinxActionType\",\"name\":\"actionType\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct RawSphinxAction[]\",\"name\":\"_actions\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes32[][]\",\"name\":\"_proofs\",\"type\":\"bytes32[][]\"}],\"name\":\"executeInitialActions\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"_proxy\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"_contractKindHash\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"exportProxy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address payable\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"contractKindHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct SphinxTarget[]\",\"name\":\"_targets\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes32[][]\",\"name\":\"_proofs\",\"type\":\"bytes32[][]\"}],\"name\":\"finalizeUpgrade\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_projectName\",\"type\":\"string\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"initialize\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address payable\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"contractKindHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct SphinxTarget[]\",\"name\":\"_targets\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes32[][]\",\"name\":\"_proofs\",\"type\":\"bytes32[][]\"}],\"name\":\"initiateUpgrade\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isExecuting\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"registry\",\"outputs\":[{\"internalType\":\"contract ISphinxRegistry\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enum SphinxActionType\",\"name\":\"actionType\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct RawSphinxAction[]\",\"name\":\"_actions\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes32[][]\",\"name\":\"_proofs\",\"type\":\"bytes32[][]\"}],\"name\":\"setStorage\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"initialize(address,string,bytes)\":{\"returns\":{\"_0\":\"Arbitrary bytes.\"}},\"isExecuting()\":{\"returns\":{\"_0\":\"Whether or not a deployment is currently being executed.\"}},\"registry()\":{\"returns\":{\"_0\":\"Address of the SphinxRegistry.\"}}},\"title\":\"SphinxManager\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"initialize(address,string,bytes)\":{\"notice\":\"Initializes this contract. Must only be callable one time, which should occur immediately after contract creation. This is necessary because this contract is meant to exist as an implementation behind proxies.\"},\"isExecuting()\":{\"notice\":\"Indicates whether or not a deployment is currently being executed.\"},\"registry()\":{\"notice\":\"The SphinxRegistry.\"}},\"notice\":\"Interface that must be inherited by the SphinxManager contract.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxManager.sol\":\"ISphinxManager\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@connext/=node_modules/@sphinx-labs/contracts/node_modules/@connext/\",\":@eth-optimism/=node_modules/@eth-optimism/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@sphinx-labs/=node_modules/@sphinx-labs/\",\":@sphinx/=node_modules/@sphinx-labs/plugins/contracts/foundry/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\",\":hardhat/=node_modules/hardhat/\",\":solmate/=node_modules/solmate/\"]},\"sources\":{\"node_modules/@sphinx-labs/contracts/contracts/SphinxDataTypes.sol\":{\"keccak256\":\"0xf07f8bfd5ee4c6b8729c6caa33c871ac582a984ec5eb7b65b886655ad9571144\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0a0dccbf0b290aa51b90bb4879804f42bf46e3275f93e58dfb762020ec7398e6\",\"dweb:/ipfs/Qmbj4qm7cyofBhb36cVqT879BNsaEgBEmqgPqNQTfzkrku\"]},\"node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxManager.sol\":{\"keccak256\":\"0x6a1f4843aa33bbb737ab93d2b4499efaaf65b870ba941572f16dd5be0383833e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://996f95a92c7dc8b8fe18b56af6095d9f223a4ac73c6a086fd1136670f7c443fd\",\"dweb:/ipfs/QmV3AADzH3CBAPgWNhc5E7rT6aVQEyKFFZxFa3HtjdEDam\"]},\"node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxRegistry.sol\":{\"keccak256\":\"0xb5da419962cad4eed38b6a5eb19941caf89843cda0cb03b8a7a64a33ecc915a7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://46e4ed9db9553f90389a76687a454adb729256130472a8c33fe257d8c28ec1ab\",\"dweb:/ipfs/QmWAgRGXk6Ln58BhzExbK1qWTa68bjW67Df3DqtvFWuKrC\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "activeDeploymentId",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_actionRoot",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_targetRoot",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_numInitialActions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_numSetStorageActions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_numTargets",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "_configUri",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "_remoteExecution",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "approve"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_callHash",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "callNonces",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "cancelActiveSphinxDeployment"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_deploymentId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "deployments",
+          "outputs": [
+            {
+              "internalType": "struct DeploymentState",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "enum DeploymentStatus",
+                  "name": "status",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bool[]",
+                  "name": "actions",
+                  "type": "bool[]"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "targets",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "actionRoot",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "targetRoot",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "numImmutableContracts",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "actionsExecuted",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "timeClaimed",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "selectedExecutor",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "remoteExecution",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "string",
+                  "name": "configUri",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "numInitialActions",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "numSetStorageActions",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct RawSphinxAction[]",
+              "name": "_actions",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "enum SphinxActionType",
+                  "name": "actionType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "index",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "data",
+                  "type": "bytes"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes32[][]",
+              "name": "_proofs",
+              "type": "bytes32[][]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "executeInitialActions"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address payable",
+              "name": "_proxy",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_contractKindHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "exportProxy"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct SphinxTarget[]",
+              "name": "_targets",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address payable",
+                  "name": "addr",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "implementation",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "contractKindHash",
+                  "type": "bytes32"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes32[][]",
+              "name": "_proofs",
+              "type": "bytes32[][]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "finalizeUpgrade"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_owner",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "_projectName",
+              "type": "string"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "initialize",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct SphinxTarget[]",
+              "name": "_targets",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address payable",
+                  "name": "addr",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "implementation",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "contractKindHash",
+                  "type": "bytes32"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes32[][]",
+              "name": "_proofs",
+              "type": "bytes32[][]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "initiateUpgrade"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isExecuting",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "registry",
+          "outputs": [
+            {
+              "internalType": "contract ISphinxRegistry",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct RawSphinxAction[]",
+              "name": "_actions",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "enum SphinxActionType",
+                  "name": "actionType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "index",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "data",
+                  "type": "bytes"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes32[][]",
+              "name": "_proofs",
+              "type": "bytes32[][]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setStorage"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "initialize(address,string,bytes)": {
+            "returns": {
+              "_0": "Arbitrary bytes."
+            }
+          },
+          "isExecuting()": {
+            "returns": {
+              "_0": "Whether or not a deployment is currently being executed."
+            }
+          },
+          "registry()": {
+            "returns": {
+              "_0": "Address of the SphinxRegistry."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "initialize(address,string,bytes)": {
+            "notice": "Initializes this contract. Must only be callable one time, which should occur immediately after contract creation. This is necessary because this contract is meant to exist as an implementation behind proxies."
+          },
+          "isExecuting()": {
+            "notice": "Indicates whether or not a deployment is currently being executed."
+          },
+          "registry()": {
+            "notice": "The SphinxRegistry."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@connext/=node_modules/@sphinx-labs/contracts/node_modules/@connext/",
+        "@eth-optimism/=node_modules/@eth-optimism/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@sphinx-labs/=node_modules/@sphinx-labs/",
+        "@sphinx/=node_modules/@sphinx-labs/plugins/contracts/foundry/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/",
+        "hardhat/=node_modules/hardhat/",
+        "solmate/=node_modules/solmate/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxManager.sol": "ISphinxManager"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@sphinx-labs/contracts/contracts/SphinxDataTypes.sol": {
+        "keccak256": "0xf07f8bfd5ee4c6b8729c6caa33c871ac582a984ec5eb7b65b886655ad9571144",
+        "urls": [
+          "bzz-raw://0a0dccbf0b290aa51b90bb4879804f42bf46e3275f93e58dfb762020ec7398e6",
+          "dweb:/ipfs/Qmbj4qm7cyofBhb36cVqT879BNsaEgBEmqgPqNQTfzkrku"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxManager.sol": {
+        "keccak256": "0x6a1f4843aa33bbb737ab93d2b4499efaaf65b870ba941572f16dd5be0383833e",
+        "urls": [
+          "bzz-raw://996f95a92c7dc8b8fe18b56af6095d9f223a4ac73c6a086fd1136670f7c443fd",
+          "dweb:/ipfs/QmV3AADzH3CBAPgWNhc5E7rT6aVQEyKFFZxFa3HtjdEDam"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxRegistry.sol": {
+        "keccak256": "0xb5da419962cad4eed38b6a5eb19941caf89843cda0cb03b8a7a64a33ecc915a7",
+        "urls": [
+          "bzz-raw://46e4ed9db9553f90389a76687a454adb729256130472a8c33fe257d8c28ec1ab",
+          "dweb:/ipfs/QmWAgRGXk6Ln58BhzExbK1qWTa68bjW67Df3DqtvFWuKrC"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
+  "ast": {
+    "absolutePath": "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxManager.sol",
+    "id": 483,
+    "exportedSymbols": {
+      "DeploymentState": [
+        233
+      ],
+      "ISphinxManager": [
+        482
+      ],
+      "ISphinxRegistry": [
+        549
+      ],
+      "RawSphinxAction": [
+        242
+      ],
+      "SphinxTarget": [
+        250
+      ],
+      "Version": [
+        273
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2336:4",
+    "nodes": [
+      {
+        "id": 354,
+        "nodeType": "PragmaDirective",
+        "src": "32:31:4",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".4",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 355,
+        "nodeType": "PragmaDirective",
+        "src": "64:33:4",
+        "nodes": [],
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ]
+      },
+      {
+        "id": 357,
+        "nodeType": "ImportDirective",
+        "src": "99:56:4",
+        "nodes": [],
+        "absolutePath": "node_modules/@sphinx-labs/contracts/contracts/interfaces/ISphinxRegistry.sol",
+        "file": "./ISphinxRegistry.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 483,
+        "sourceUnit": 550,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 356,
+              "name": "ISphinxRegistry",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 549,
+              "src": "108:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 362,
+        "nodeType": "ImportDirective",
+        "src": "156:97:4",
+        "nodes": [],
+        "absolutePath": "node_modules/@sphinx-labs/contracts/contracts/SphinxDataTypes.sol",
+        "file": "../SphinxDataTypes.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 483,
+        "sourceUnit": 337,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 358,
+              "name": "DeploymentState",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 233,
+              "src": "165:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 359,
+              "name": "RawSphinxAction",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 242,
+              "src": "182:15:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 360,
+              "name": "SphinxTarget",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 250,
+              "src": "199:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 361,
+              "name": "Version",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 273,
+              "src": "213:7:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 482,
+        "nodeType": "ContractDefinition",
+        "src": "362:2005:4",
+        "nodes": [
+          {
+            "id": 375,
+            "nodeType": "FunctionDefinition",
+            "src": "687:146:4",
+            "nodes": [],
+            "documentation": {
+              "id": 364,
+              "nodeType": "StructuredDocumentation",
+              "src": "393:289:4",
+              "text": " @notice Initializes this contract. Must only be callable one time, which should occur\nimmediately after contract creation. This is necessary because this contract is meant to\nexist as an implementation behind proxies.\n @return Arbitrary bytes."
+            },
+            "functionSelector": "0eb624be",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialize",
+            "nameLocation": "696:10:4",
+            "parameters": {
+              "id": 371,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 366,
+                  "mutability": "mutable",
+                  "name": "_owner",
+                  "nameLocation": "724:6:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 375,
+                  "src": "716:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 365,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "716:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 368,
+                  "mutability": "mutable",
+                  "name": "_projectName",
+                  "nameLocation": "754:12:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 375,
+                  "src": "740:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 367,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "740:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 370,
+                  "mutability": "mutable",
+                  "name": "_data",
+                  "nameLocation": "789:5:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 375,
+                  "src": "776:18:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 369,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "776:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "706:94:4"
+            },
+            "returnParameters": {
+              "id": 374,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 373,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 375,
+                  "src": "819:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 372,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "819:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "818:14:4"
+            },
+            "scope": 482,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 381,
+            "nodeType": "FunctionDefinition",
+            "src": "1016:52:4",
+            "nodes": [],
+            "documentation": {
+              "id": 376,
+              "nodeType": "StructuredDocumentation",
+              "src": "839:172:4",
+              "text": " @notice Indicates whether or not a deployment is currently being executed.\n @return Whether or not a deployment is currently being executed."
+            },
+            "functionSelector": "e8ea2d08",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isExecuting",
+            "nameLocation": "1025:11:4",
+            "parameters": {
+              "id": 377,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1036:2:4"
+            },
+            "returnParameters": {
+              "id": 380,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 379,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 381,
+                  "src": "1062:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 378,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1062:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1061:6:4"
+            },
+            "scope": 482,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 388,
+            "nodeType": "FunctionDefinition",
+            "src": "1178:60:4",
+            "nodes": [],
+            "documentation": {
+              "id": 382,
+              "nodeType": "StructuredDocumentation",
+              "src": "1074:99:4",
+              "text": " @notice The SphinxRegistry.\n @return Address of the SphinxRegistry."
+            },
+            "functionSelector": "7b103999",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "registry",
+            "nameLocation": "1187:8:4",
+            "parameters": {
+              "id": 383,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1195:2:4"
+            },
+            "returnParameters": {
+              "id": 387,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 386,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 388,
+                  "src": "1221:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ISphinxRegistry_$549",
+                    "typeString": "contract ISphinxRegistry"
+                  },
+                  "typeName": {
+                    "id": 385,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 384,
+                      "name": "ISphinxRegistry",
+                      "nameLocations": [
+                        "1221:15:4"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 549,
+                      "src": "1221:15:4"
+                    },
+                    "referencedDeclaration": 549,
+                    "src": "1221:15:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ISphinxRegistry_$549",
+                      "typeString": "contract ISphinxRegistry"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1220:17:4"
+            },
+            "scope": 482,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 391,
+            "nodeType": "FunctionDefinition",
+            "src": "1244:49:4",
+            "nodes": [],
+            "functionSelector": "0e128b5d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "cancelActiveSphinxDeployment",
+            "nameLocation": "1253:28:4",
+            "parameters": {
+              "id": 389,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1281:2:4"
+            },
+            "returnParameters": {
+              "id": 390,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1292:0:4"
+            },
+            "scope": 482,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 400,
+            "nodeType": "FunctionDefinition",
+            "src": "1299:130:4",
+            "nodes": [],
+            "functionSelector": "75cd65e1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exportProxy",
+            "nameLocation": "1308:11:4",
+            "parameters": {
+              "id": 398,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 393,
+                  "mutability": "mutable",
+                  "name": "_proxy",
+                  "nameLocation": "1345:6:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 400,
+                  "src": "1329:22:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 392,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1329:15:4",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 395,
+                  "mutability": "mutable",
+                  "name": "_contractKindHash",
+                  "nameLocation": "1369:17:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 400,
+                  "src": "1361:25:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 394,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1361:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 397,
+                  "mutability": "mutable",
+                  "name": "_newOwner",
+                  "nameLocation": "1404:9:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 400,
+                  "src": "1396:17:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 396,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1396:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1319:100:4"
+            },
+            "returnParameters": {
+              "id": 399,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1428:0:4"
+            },
+            "scope": 482,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 417,
+            "nodeType": "FunctionDefinition",
+            "src": "1435:259:4",
+            "nodes": [],
+            "functionSelector": "28d6ec60",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approve",
+            "nameLocation": "1444:7:4",
+            "parameters": {
+              "id": 415,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 402,
+                  "mutability": "mutable",
+                  "name": "_actionRoot",
+                  "nameLocation": "1469:11:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 417,
+                  "src": "1461:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 401,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1461:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 404,
+                  "mutability": "mutable",
+                  "name": "_targetRoot",
+                  "nameLocation": "1498:11:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 417,
+                  "src": "1490:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 403,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1490:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 406,
+                  "mutability": "mutable",
+                  "name": "_numInitialActions",
+                  "nameLocation": "1527:18:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 417,
+                  "src": "1519:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 405,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1519:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 408,
+                  "mutability": "mutable",
+                  "name": "_numSetStorageActions",
+                  "nameLocation": "1563:21:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 417,
+                  "src": "1555:29:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 407,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1555:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 410,
+                  "mutability": "mutable",
+                  "name": "_numTargets",
+                  "nameLocation": "1602:11:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 417,
+                  "src": "1594:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 409,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1594:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 412,
+                  "mutability": "mutable",
+                  "name": "_configUri",
+                  "nameLocation": "1637:10:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 417,
+                  "src": "1623:24:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 411,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1623:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 414,
+                  "mutability": "mutable",
+                  "name": "_remoteExecution",
+                  "nameLocation": "1662:16:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 417,
+                  "src": "1657:21:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 413,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1657:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1451:233:4"
+            },
+            "returnParameters": {
+              "id": 416,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1693:0:4"
+            },
+            "scope": 482,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 422,
+            "nodeType": "FunctionDefinition",
+            "src": "1700:62:4",
+            "nodes": [],
+            "functionSelector": "dfba66f0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "activeDeploymentId",
+            "nameLocation": "1709:18:4",
+            "parameters": {
+              "id": 418,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1727:2:4"
+            },
+            "returnParameters": {
+              "id": 421,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 420,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 422,
+                  "src": "1753:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 419,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1753:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1752:9:4"
+            },
+            "scope": 482,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 430,
+            "nodeType": "FunctionDefinition",
+            "src": "1768:91:4",
+            "nodes": [],
+            "functionSelector": "37404017",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deployments",
+            "nameLocation": "1777:11:4",
+            "parameters": {
+              "id": 425,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 424,
+                  "mutability": "mutable",
+                  "name": "_deploymentId",
+                  "nameLocation": "1797:13:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 430,
+                  "src": "1789:21:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 423,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1789:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1788:23:4"
+            },
+            "returnParameters": {
+              "id": 429,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 428,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 430,
+                  "src": "1835:22:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_DeploymentState_$233_memory_ptr",
+                    "typeString": "struct DeploymentState"
+                  },
+                  "typeName": {
+                    "id": 427,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 426,
+                      "name": "DeploymentState",
+                      "nameLocations": [
+                        "1835:15:4"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 233,
+                      "src": "1835:15:4"
+                    },
+                    "referencedDeclaration": 233,
+                    "src": "1835:15:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_DeploymentState_$233_storage_ptr",
+                      "typeString": "struct DeploymentState"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1834:24:4"
+            },
+            "scope": 482,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 437,
+            "nodeType": "FunctionDefinition",
+            "src": "1865:71:4",
+            "nodes": [],
+            "functionSelector": "f8050b04",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "callNonces",
+            "nameLocation": "1874:10:4",
+            "parameters": {
+              "id": 433,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 432,
+                  "mutability": "mutable",
+                  "name": "_callHash",
+                  "nameLocation": "1893:9:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 437,
+                  "src": "1885:17:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 431,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1885:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1884:19:4"
+            },
+            "returnParameters": {
+              "id": 436,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 435,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 437,
+                  "src": "1927:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 434,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1927:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1926:9:4"
+            },
+            "scope": 482,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 448,
+            "nodeType": "FunctionDefinition",
+            "src": "1942:125:4",
+            "nodes": [],
+            "functionSelector": "6dcfd466",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "executeInitialActions",
+            "nameLocation": "1951:21:4",
+            "parameters": {
+              "id": 446,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 441,
+                  "mutability": "mutable",
+                  "name": "_actions",
+                  "nameLocation": "2007:8:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 448,
+                  "src": "1982:33:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_RawSphinxAction_$242_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct RawSphinxAction[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 439,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 438,
+                        "name": "RawSphinxAction",
+                        "nameLocations": [
+                          "1982:15:4"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 242,
+                        "src": "1982:15:4"
+                      },
+                      "referencedDeclaration": 242,
+                      "src": "1982:15:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_RawSphinxAction_$242_storage_ptr",
+                        "typeString": "struct RawSphinxAction"
+                      }
+                    },
+                    "id": 440,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1982:17:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_RawSphinxAction_$242_storage_$dyn_storage_ptr",
+                      "typeString": "struct RawSphinxAction[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 445,
+                  "mutability": "mutable",
+                  "name": "_proofs",
+                  "nameLocation": "2044:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 448,
+                  "src": "2025:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_array$_t_bytes32_$dyn_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes32[][]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "baseType": {
+                        "id": 442,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2025:7:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "id": 443,
+                      "nodeType": "ArrayTypeName",
+                      "src": "2025:9:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                        "typeString": "bytes32[]"
+                      }
+                    },
+                    "id": 444,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2025:11:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_array$_t_bytes32_$dyn_storage_$dyn_storage_ptr",
+                      "typeString": "bytes32[][]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1972:85:4"
+            },
+            "returnParameters": {
+              "id": 447,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2066:0:4"
+            },
+            "scope": 482,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 459,
+            "nodeType": "FunctionDefinition",
+            "src": "2073:92:4",
+            "nodes": [],
+            "functionSelector": "047a1e5a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setStorage",
+            "nameLocation": "2082:10:4",
+            "parameters": {
+              "id": 457,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 452,
+                  "mutability": "mutable",
+                  "name": "_actions",
+                  "nameLocation": "2118:8:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 459,
+                  "src": "2093:33:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_RawSphinxAction_$242_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct RawSphinxAction[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 450,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 449,
+                        "name": "RawSphinxAction",
+                        "nameLocations": [
+                          "2093:15:4"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 242,
+                        "src": "2093:15:4"
+                      },
+                      "referencedDeclaration": 242,
+                      "src": "2093:15:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_RawSphinxAction_$242_storage_ptr",
+                        "typeString": "struct RawSphinxAction"
+                      }
+                    },
+                    "id": 451,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2093:17:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_RawSphinxAction_$242_storage_$dyn_storage_ptr",
+                      "typeString": "struct RawSphinxAction[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 456,
+                  "mutability": "mutable",
+                  "name": "_proofs",
+                  "nameLocation": "2147:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 459,
+                  "src": "2128:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_array$_t_bytes32_$dyn_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes32[][]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "baseType": {
+                        "id": 453,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2128:7:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "id": 454,
+                      "nodeType": "ArrayTypeName",
+                      "src": "2128:9:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                        "typeString": "bytes32[]"
+                      }
+                    },
+                    "id": 455,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2128:11:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_array$_t_bytes32_$dyn_storage_$dyn_storage_ptr",
+                      "typeString": "bytes32[][]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2092:63:4"
+            },
+            "returnParameters": {
+              "id": 458,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2164:0:4"
+            },
+            "scope": 482,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 470,
+            "nodeType": "FunctionDefinition",
+            "src": "2171:94:4",
+            "nodes": [],
+            "functionSelector": "f22bd7fd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initiateUpgrade",
+            "nameLocation": "2180:15:4",
+            "parameters": {
+              "id": 468,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 463,
+                  "mutability": "mutable",
+                  "name": "_targets",
+                  "nameLocation": "2218:8:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 470,
+                  "src": "2196:30:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_SphinxTarget_$250_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct SphinxTarget[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 461,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 460,
+                        "name": "SphinxTarget",
+                        "nameLocations": [
+                          "2196:12:4"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 250,
+                        "src": "2196:12:4"
+                      },
+                      "referencedDeclaration": 250,
+                      "src": "2196:12:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_SphinxTarget_$250_storage_ptr",
+                        "typeString": "struct SphinxTarget"
+                      }
+                    },
+                    "id": 462,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2196:14:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_SphinxTarget_$250_storage_$dyn_storage_ptr",
+                      "typeString": "struct SphinxTarget[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 467,
+                  "mutability": "mutable",
+                  "name": "_proofs",
+                  "nameLocation": "2247:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 470,
+                  "src": "2228:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_array$_t_bytes32_$dyn_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes32[][]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "baseType": {
+                        "id": 464,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2228:7:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "id": 465,
+                      "nodeType": "ArrayTypeName",
+                      "src": "2228:9:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                        "typeString": "bytes32[]"
+                      }
+                    },
+                    "id": 466,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2228:11:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_array$_t_bytes32_$dyn_storage_$dyn_storage_ptr",
+                      "typeString": "bytes32[][]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2195:60:4"
+            },
+            "returnParameters": {
+              "id": 469,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2264:0:4"
+            },
+            "scope": 482,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 481,
+            "nodeType": "FunctionDefinition",
+            "src": "2271:94:4",
+            "nodes": [],
+            "functionSelector": "3731e1ce",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "finalizeUpgrade",
+            "nameLocation": "2280:15:4",
+            "parameters": {
+              "id": 479,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 474,
+                  "mutability": "mutable",
+                  "name": "_targets",
+                  "nameLocation": "2318:8:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 481,
+                  "src": "2296:30:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_SphinxTarget_$250_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct SphinxTarget[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 472,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 471,
+                        "name": "SphinxTarget",
+                        "nameLocations": [
+                          "2296:12:4"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 250,
+                        "src": "2296:12:4"
+                      },
+                      "referencedDeclaration": 250,
+                      "src": "2296:12:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_SphinxTarget_$250_storage_ptr",
+                        "typeString": "struct SphinxTarget"
+                      }
+                    },
+                    "id": 473,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2296:14:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_SphinxTarget_$250_storage_$dyn_storage_ptr",
+                      "typeString": "struct SphinxTarget[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 478,
+                  "mutability": "mutable",
+                  "name": "_proofs",
+                  "nameLocation": "2347:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 481,
+                  "src": "2328:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_array$_t_bytes32_$dyn_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "bytes32[][]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "baseType": {
+                        "id": 475,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2328:7:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "id": 476,
+                      "nodeType": "ArrayTypeName",
+                      "src": "2328:9:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                        "typeString": "bytes32[]"
+                      }
+                    },
+                    "id": 477,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2328:11:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_array$_t_bytes32_$dyn_storage_$dyn_storage_ptr",
+                      "typeString": "bytes32[][]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2295:60:4"
+            },
+            "returnParameters": {
+              "id": 480,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2364:0:4"
+            },
+            "scope": 482,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISphinxManager",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 363,
+          "nodeType": "StructuredDocumentation",
+          "src": "255:106:4",
+          "text": " @title SphinxManager\n @notice Interface that must be inherited by the SphinxManager contract."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          482
+        ],
+        "name": "ISphinxManager",
+        "nameLocation": "372:14:4",
+        "scope": 483,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 4
+}
