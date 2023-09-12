@@ -100,8 +100,8 @@
       }
     },
     "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/Sphinx.sol": {
-      "lastModificationDate": 1694204507787,
-      "contentHash": "46942b3bb0fa678c2f912b96a8a027ab",
+      "lastModificationDate": 1694208119115,
+      "contentHash": "2a581afdea5a6106a337d29f85b695f5",
       "sourceName": "/Users/ryan/Desktop/programming/splash/sphinx/packages/plugins/contracts/foundry/Sphinx.sol",
       "solcConfig": {
         "settings": {
@@ -494,8 +494,8 @@
       }
     },
     "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol": {
-      "lastModificationDate": 1694204507787,
-      "contentHash": "46942b3bb0fa678c2f912b96a8a027ab",
+      "lastModificationDate": 1694208119115,
+      "contentHash": "2a581afdea5a6106a337d29f85b695f5",
       "sourceName": "node_modules/@sphinx-labs/plugins/contracts/foundry/Sphinx.sol",
       "solcConfig": {
         "settings": {
@@ -1500,9 +1500,144 @@
       }
     },
     "src/HelloSphinx.sol": {
-      "lastModificationDate": 1694108016880,
-      "contentHash": "c44f1d5dd36fcbf75643525d2c3f58f2",
+      "lastModificationDate": 1694458720067,
+      "contentHash": "4de2b0c0d79ba22581612672fe34be0c",
       "sourceName": "src/HelloSphinx.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "evm.gasEstimates"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.7.4, <0.9.0",
+      "artifacts": {
+        "HelloSphinx": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "HelloSphinx.sol/HelloSphinx.json"
+        }
+      }
+    },
+    "src/client/HelloSphinx.sol": {
+      "lastModificationDate": 1694458942111,
+      "contentHash": "e1ae48c49c35c113a394ffbcbe8cfea8",
+      "sourceName": "src/client/HelloSphinx.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "evm.gasEstimates"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/client/types/SphinxClientTypes.sol"
+      ],
+      "versionRequirement": ">=0.7.4, <0.9.0",
+      "artifacts": {
+        "HelloSphinx": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "HelloSphinx.sol/HelloSphinx.json"
+        }
+      }
+    },
+    "src/client/SphinxClient.sol": {
+      "lastModificationDate": 1694460681470,
+      "contentHash": "2187cc79e1c1bb4498649219757a7be1",
+      "sourceName": "src/client/SphinxClient.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "evm.gasEstimates"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/client/HelloSphinx.sol",
+        "src/client/SphinxUtils.sol",
+        "src/client/types/SphinxClientTypes.sol"
+      ],
+      "versionRequirement": ">=0.7.4, <0.9.0",
+      "artifacts": {
+        "SphinxClient": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SphinxClient.sol/SphinxClient.json"
+        }
+      }
+    },
+    "src/client/SphinxConfig.sol": {
+      "lastModificationDate": 1694388951335,
+      "contentHash": "22ac80fd80ffdcbf5ce1bddd64c9dd0d",
+      "sourceName": "src/client/SphinxConfig.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -1537,8 +1672,145 @@
       "imports": [],
       "versionRequirement": "^0.8.19",
       "artifacts": {
-        "HelloSphinx": {
-          "0.8.20+commit.a1b79de6.Darwin.appleclang": "HelloSphinx.sol/HelloSphinx.json"
+        "SphinxConfig": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SphinxConfig.sol/SphinxConfig.json"
+        }
+      }
+    },
+    "src/client/SphinxUtils.sol": {
+      "lastModificationDate": 1694460471241,
+      "contentHash": "7da03ea91044d0fdc7188c6231fb73cd",
+      "sourceName": "src/client/SphinxUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "evm.gasEstimates"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/client/types/SphinxClientTypes.sol"
+      ],
+      "versionRequirement": ">=0.7.4, <0.9.0",
+      "artifacts": {
+        "SphinxUtils": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SphinxUtils.sol/SphinxUtils.json"
+        }
+      }
+    },
+    "src/client/types/SphinxClientTypes.sol": {
+      "lastModificationDate": 1694458569836,
+      "contentHash": "3590df34f004b99785dc4a59b1b14201",
+      "sourceName": "src/client/types/SphinxClientTypes.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "evm.gasEstimates"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.7.4, <0.9.0",
+      "artifacts": {
+        "SphinxClientTypes": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "SphinxClientTypes.sol/SphinxClientTypes.json"
+        }
+      }
+    },
+    "src/config/HelloSphinxConfig.sol": {
+      "lastModificationDate": 1694460842048,
+      "contentHash": "a7088ccd4ab7a470b9d61e017b058a6b",
+      "sourceName": "src/config/HelloSphinxConfig.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "evm.gasEstimates"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/client/HelloSphinx.sol",
+        "src/client/SphinxClient.sol",
+        "src/client/SphinxConfig.sol",
+        "src/client/SphinxUtils.sol",
+        "src/client/types/SphinxClientTypes.sol"
+      ],
+      "versionRequirement": "^0.8.19",
+      "artifacts": {
+        "HelloSphinxConfig": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "HelloSphinxConfig.sol/HelloSphinxConfig.json"
         }
       }
     },

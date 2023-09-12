@@ -1,0 +1,132 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212209b3fe92da2fa7bc13f32ab153107fa76e36b5617da4261418c1504974cd6d56f64736f6c63430008140033",
+    "sourceMap": "58:24:36:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea26469706673582212209b3fe92da2fa7bc13f32ab153107fa76e36b5617da4261418c1504974cd6d56f64736f6c63430008140033",
+    "sourceMap": "58:24:36:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "gasEstimates": {
+    "creation": {
+      "codeDepositCost": "12600",
+      "executionCost": "66",
+      "totalCost": "12666"
+    },
+    "external": {},
+    "internal": {}
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/client/SphinxConfig.sol\":\"SphinxConfig\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@connext/=node_modules/@sphinx-labs/contracts/node_modules/@connext/\",\":@eth-optimism/=node_modules/@eth-optimism/\",\":@layerzerolabs/=node_modules/@sphinx-labs/plugins/node_modules/@layerzerolabs/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@rari-capital/=node_modules/@rari-capital/\",\":@sphinx-labs/=node_modules/@sphinx-labs/\",\":@sphinx/=node_modules/@sphinx-labs/plugins/contracts/foundry/\",\":clones-with-immutable-args/=node_modules/clones-with-immutable-args/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\",\":hardhat/=node_modules/hardhat/\",\":solmate/=node_modules/solmate/\"]},\"sources\":{\"src/client/SphinxConfig.sol\":{\"keccak256\":\"0x10310e5a32b02dec3ec0b5d254c6538715dbf5edf3ba14a2f15d6f6edb0ed17c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d83fa6132494db85abb0f64d8cf9ceb7edcade086dd8b8e830cb6f71b69ddc34\",\"dweb:/ipfs/QmdJY3Es9Ch9mvidTxfEsPXgkTZohUkEYLS24Pe8XBWFsi\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@connext/=node_modules/@sphinx-labs/contracts/node_modules/@connext/",
+        "@eth-optimism/=node_modules/@eth-optimism/",
+        "@layerzerolabs/=node_modules/@sphinx-labs/plugins/node_modules/@layerzerolabs/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@rari-capital/=node_modules/@rari-capital/",
+        "@sphinx-labs/=node_modules/@sphinx-labs/",
+        "@sphinx/=node_modules/@sphinx-labs/plugins/contracts/foundry/",
+        "clones-with-immutable-args/=node_modules/clones-with-immutable-args/",
+        "ds-test/=node_modules/ds-test/src/",
+        "forge-std/=node_modules/forge-std/src/",
+        "hardhat/=node_modules/hardhat/",
+        "solmate/=node_modules/solmate/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/client/SphinxConfig.sol": "SphinxConfig"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/client/SphinxConfig.sol": {
+        "keccak256": "0x10310e5a32b02dec3ec0b5d254c6538715dbf5edf3ba14a2f15d6f6edb0ed17c",
+        "urls": [
+          "bzz-raw://d83fa6132494db85abb0f64d8cf9ceb7edcade086dd8b8e830cb6f71b69ddc34",
+          "dweb:/ipfs/QmdJY3Es9Ch9mvidTxfEsPXgkTZohUkEYLS24Pe8XBWFsi"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": {}
+  },
+  "ast": {
+    "absolutePath": "src/client/SphinxConfig.sol",
+    "id": 46832,
+    "exportedSymbols": {
+      "SphinxConfig": [
+        46831
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:50:36",
+    "nodes": [
+      {
+        "id": 46830,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:36",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 46831,
+        "nodeType": "ContractDefinition",
+        "src": "58:24:36",
+        "nodes": [],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "SphinxConfig",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          46831
+        ],
+        "name": "SphinxConfig",
+        "nameLocation": "67:12:36",
+        "scope": 46832,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 36
+}

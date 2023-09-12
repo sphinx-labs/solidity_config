@@ -1,9 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-import { HelloSphinxClient, GoodbyeSphinxClient } from "./client/HelloSphinxClient.sol";
-import { SphinxConfig } from "./client/SphinxConfig.sol";
-import { Network, UintInputWithDefault, UintInput, AddressInputWithDefault, AddressInput } from "./types/SphinxClientTypes.sol";
+import { SphinxConfig } from "../client/SphinxConfig.sol";
+import { Network, DeployOptions } from "../client/types/SphinxClientTypes.sol";
+import { SphinxClient } from "../client/SphinxClient.sol";
+import { HelloSphinx } from "../client/HelloSphinx.sol";
+import { SphinxUtils } from "../client/SphinxUtils.sol";
 
 contract HelloSphinxConfig is SphinxConfig {
     address[] owners;
@@ -11,19 +13,19 @@ contract HelloSphinxConfig is SphinxConfig {
     address[] proposers;
     string managerVersion;
     Network[] networks;
+    SphinxUtils utils;
 
     address immutable owner = 0x9fd58Bf0F2E6125Ffb0CBFa9AE91893Dbc1D5c51;
 
-    mapping(Network => uint) storage chainIds;
+    mapping(Network => uint) chainIds;
 
     constructor () {
+        utils = new SphinxUtils();
         owners.push(owner);
         proposers.push(owner);
         threshold = 1;
         managerVersion = "v0.2.3";
-        networks.push(Network.ethereum);
-        networks.push(Network.optimism);
-        networks.push(Network.arbitrum);
+        networks = utils.networks(Network.ethereum, Network.optimism, Network.arbitrum);
 
         chainIds[Network.ethereum] = 1;
         chainIds[Network.bsc] = 56;
@@ -40,39 +42,19 @@ contract HelloSphinxConfig is SphinxConfig {
 
     function deploy(Network _network) public { 
         bytes32 salt = bytes32(0);
-        
-        HelloSphinxClient helloSphinxClient = new HelloSphinxClient();
-        DifferentHelloSphinxClient differentHelloSphinxClient = new DifferentHelloSphinx();
+    
+        SphinxClient client = new SphinxClient({ 
+            _owners: owners,
+            _threshold: threshold
+        });
 
-        HelloSphinxClient helloSphinx;
-        if (_network == Networks.FTM) {
-            address differentHelloSphinxAddress = differentHelloSphinxClient.deploy(
-                1, 
-                address(0), 
-                { salt: salt, networks: networks, referenceName: "HelloSphinx"}
-            );
-            helloSphinx = HelloSphinxClient(differentHelloSphinxAddress);
-        } else {
-            helloSphinx = helloSphinxClient.deploy(
-                1, 
-                address(0), 
-                { salt: salt, networks: networks, referenceName: "HelloSphinx"}
-            );
-        }
-
-        HelloSphinx singleNetworkSphinx = helloSphinxClient.deploy(
-            2, 
-            address(2), 
-            { salt: salt, networks: [Network.ethereum], referenceName: "HelloSphinxEthereum"}
+        Network[] memory setOfNetworks = utils.networks(Network.ethereum);
+        HelloSphinx helloSphinx = client.DeployHelloSphinx(
+            chainIds[_network], 
+            address(0), 
+            DeployOptions({ salt: salt, networks: setOfNetworks, referenceName: "HelloSphinx" })
         );
 
-        helloSphinx.setNumber(
-            chainIds[_network],
-            { networks: networks }
-        );
-
-        singleNetworkSphinx.increment{
-            { networks: [Network.ethereum] }
-        }
+        helloSphinx.increment();
     }
 }

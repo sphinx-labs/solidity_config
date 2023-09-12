@@ -8,6 +8,7 @@ enum Network {
     polygon,
     bsc,
     avalanche,
+    fantom
 }
 
 struct DeployOptions {

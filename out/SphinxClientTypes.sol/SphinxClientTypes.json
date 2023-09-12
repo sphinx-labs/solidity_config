@@ -1,0 +1,279 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/client/types/SphinxClientTypes.sol",
+    "id": 46856,
+    "exportedSymbols": {
+      "ActionOptions": [
+        46855
+      ],
+      "DeployOptions": [
+        46850
+      ],
+      "Network": [
+        46841
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:286:37",
+    "nodes": [
+      {
+        "id": 46833,
+        "nodeType": "PragmaDirective",
+        "src": "32:31:37",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".4",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 46841,
+        "nodeType": "EnumDefinition",
+        "src": "65:109:37",
+        "nodes": [],
+        "canonicalName": "Network",
+        "members": [
+          {
+            "id": 46834,
+            "name": "ethereum",
+            "nameLocation": "85:8:37",
+            "nodeType": "EnumValue",
+            "src": "85:8:37"
+          },
+          {
+            "id": 46835,
+            "name": "optimism",
+            "nameLocation": "100:8:37",
+            "nodeType": "EnumValue",
+            "src": "100:8:37"
+          },
+          {
+            "id": 46836,
+            "name": "arbitrum",
+            "nameLocation": "115:8:37",
+            "nodeType": "EnumValue",
+            "src": "115:8:37"
+          },
+          {
+            "id": 46837,
+            "name": "polygon",
+            "nameLocation": "129:7:37",
+            "nodeType": "EnumValue",
+            "src": "129:7:37"
+          },
+          {
+            "id": 46838,
+            "name": "bsc",
+            "nameLocation": "142:3:37",
+            "nodeType": "EnumValue",
+            "src": "142:3:37"
+          },
+          {
+            "id": 46839,
+            "name": "avalanche",
+            "nameLocation": "151:9:37",
+            "nodeType": "EnumValue",
+            "src": "151:9:37"
+          },
+          {
+            "id": 46840,
+            "name": "fantom",
+            "nameLocation": "166:6:37",
+            "nodeType": "EnumValue",
+            "src": "166:6:37"
+          }
+        ],
+        "name": "Network",
+        "nameLocation": "70:7:37"
+      },
+      {
+        "id": 46850,
+        "nodeType": "StructDefinition",
+        "src": "176:92:37",
+        "nodes": [],
+        "canonicalName": "DeployOptions",
+        "members": [
+          {
+            "constant": false,
+            "id": 46843,
+            "mutability": "mutable",
+            "name": "salt",
+            "nameLocation": "211:4:37",
+            "nodeType": "VariableDeclaration",
+            "scope": 46850,
+            "src": "203:12:37",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 46842,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "203:7:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 46847,
+            "mutability": "mutable",
+            "name": "networks",
+            "nameLocation": "231:8:37",
+            "nodeType": "VariableDeclaration",
+            "scope": 46850,
+            "src": "221:18:37",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_enum$_Network_$46841_$dyn_storage_ptr",
+              "typeString": "enum Network[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 46845,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 46844,
+                  "name": "Network",
+                  "nameLocations": [
+                    "221:7:37"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 46841,
+                  "src": "221:7:37"
+                },
+                "referencedDeclaration": 46841,
+                "src": "221:7:37",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Network_$46841",
+                  "typeString": "enum Network"
+                }
+              },
+              "id": 46846,
+              "nodeType": "ArrayTypeName",
+              "src": "221:9:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_enum$_Network_$46841_$dyn_storage_ptr",
+                "typeString": "enum Network[]"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 46849,
+            "mutability": "mutable",
+            "name": "referenceName",
+            "nameLocation": "252:13:37",
+            "nodeType": "VariableDeclaration",
+            "scope": 46850,
+            "src": "245:20:37",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 46848,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "245:6:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "DeployOptions",
+        "nameLocation": "183:13:37",
+        "scope": 46856,
+        "visibility": "public"
+      },
+      {
+        "id": 46855,
+        "nodeType": "StructDefinition",
+        "src": "270:48:37",
+        "nodes": [],
+        "canonicalName": "ActionOptions",
+        "members": [
+          {
+            "constant": false,
+            "id": 46854,
+            "mutability": "mutable",
+            "name": "networks",
+            "nameLocation": "307:8:37",
+            "nodeType": "VariableDeclaration",
+            "scope": 46855,
+            "src": "297:18:37",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_enum$_Network_$46841_$dyn_storage_ptr",
+              "typeString": "enum Network[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 46852,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 46851,
+                  "name": "Network",
+                  "nameLocations": [
+                    "297:7:37"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 46841,
+                  "src": "297:7:37"
+                },
+                "referencedDeclaration": 46841,
+                "src": "297:7:37",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Network_$46841",
+                  "typeString": "enum Network"
+                }
+              },
+              "id": 46853,
+              "nodeType": "ArrayTypeName",
+              "src": "297:9:37",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_enum$_Network_$46841_$dyn_storage_ptr",
+                "typeString": "enum Network[]"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "ActionOptions",
+        "nameLocation": "277:13:37",
+        "scope": 46856,
+        "visibility": "public"
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 37
+}
